@@ -7,8 +7,8 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 1  # take down 1 pod at a time
-      maxUnavailable: 1        # bring one at a time
+      maxSurge: 1  # bring one at a time 
+      maxUnavailable: 1        # take down 1 pod at a time
   minReadySeconds: 5    
   selector:
     matchLabels:
